@@ -51,31 +51,7 @@ namespace Log4NetMongo.Tests
 		            </field>
                     <field>
 			            <name value='message' />
-			            <layout type='Log4NetMongo.CustomPatternLayout,Log4NetMongo' value='' />
-		            </field>
-		            <field>
-			            <name value='threadContextProperty' />
-			            <layout type='log4net.Layout.RawPropertyLayout'>
-				            <key value='threadContextProperty' />
-			            </layout>
-		            </field>
-		            <field>
-			            <name value='globalContextProperty' />
-			            <layout type='log4net.Layout.RawPropertyLayout'>
-				            <key value='globalContextProperty' />
-			            </layout>
-		            </field>
-		            <field>
-			            <name value='numberProperty' />
-			            <layout type='log4net.Layout.RawPropertyLayout'>
-				            <key value='numberProperty' />
-			            </layout>
-		            </field>
-		            <field>
-			            <name value='dateProperty' />
-			            <layout type='log4net.Layout.RawPropertyLayout'>
-				            <key value='dateProperty' />
-			            </layout>
+			            <layout type='log4net.Layout.PatternLayout' value='%message' />
 		            </field>
 		            <field>
 			            <name value='exception' />
@@ -101,9 +77,6 @@ namespace Log4NetMongo.Tests
                 Id = 1,
                 Age = 26
             });
-
-
-
         }
     }
 
